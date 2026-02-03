@@ -1,4 +1,4 @@
-import { createClient, type SanityClient } from '@sanity/client';
+import { createClient } from '@sanity/client';
 import { documentEventHandler } from '@sanity/functions';
 import { defineQuery } from 'groq';
 import pThrottle from 'p-throttle';
@@ -32,7 +32,7 @@ export const handler = documentEventHandler(async ({ context, event }) => {
     apiVersion: '2025-05-17',
   });
 
-  const query = data._type === 'page' ? PAGE_URL_QUERY;
+  const query = PAGE_URL_QUERY;
   const documents = await client.fetch(query, { id: data._id });
 
   console.log(documents);
