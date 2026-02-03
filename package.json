@@ -15,18 +15,23 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/vision": "^4.10.3",
-    "react": "^19.1",
-    "react-dom": "^19.1",
-    "sanity": "^4.10.3",
-    "styled-components": "^6.1.18"
+    "@sanity/client": "^7.14.1",
+    "@sanity/functions": "^1.2.0",
+    "@sanity/vision": "5.7.0",
+    "groq": "^5.7.0",
+    "p-throttle": "^8.1.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "sanity": "5.7.0",
+    "styled-components": "6.3.8"
   },
   "devDependencies": {
-    "@sanity/eslint-config-studio": "^5.0.2",
-    "@types/react": "^19.1",
-    "eslint": "^9.28",
-    "prettier": "^3.5",
-    "typescript": "^5.8"
+    "@sanity/blueprints": "0.10.0",
+    "@sanity/eslint-config-studio": "6.0.0",
+    "@types/react": "19.2.10",
+    "eslint": "9.39.2",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
   },
   "prettier": {
     "semi": false,
@@ -34,5 +39,5 @@
     "bracketSpacing": false,
     "singleQuote": true
   },
-  "packageManager": "pnpm@10.18.2+sha512.9fb969fa749b3ade6035e0f109f0b8a60b5d08a1a87fdf72e337da90dcc93336e2280ca4e44f2358a649b83c17959e9993e777c2080879f3801e6f0d999ad3dd"
+  "packageManager": "pnpm@10.28.2"
 }

@@ -1,0 +1,29 @@
+name: "Sanity: Blueprints Plan"
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - .github/workflows/ci-blueprints.yml
+      - apps/studio/sanity.blueprint.ts
+      - apps/studio/functions/**
+      - apps/studio/blueprint.config.json
+
+permissions:
+  contents: read
+  pull-requests: write  # Required for posting comments
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Plan blueprints changes
+        uses: sanity-io/blueprints-actions/plan@plan-v1
+        with:
+          sanity-token: ${{ secrets.SANITY_STUDIO_DEPLOY_TOKEN }}
+          stack-id: 'ST-744chg4bru'
+          project-id: 'tq6w17ny'
+          working-directory: './apps/studio'
