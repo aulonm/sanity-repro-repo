@@ -47,5 +47,5 @@ jobs:
         uses: sanity-io/blueprints-actions/deploy@deploy-v2
         with:
           sanity-token: ${{ secrets.SANITY_STUDIO_DEPLOY_TOKEN }}
-          stack-id: 'ST-744chg4bru'
+          stack-id: 'ST-qwq7vwf7w6'
           project-id: 'tq6w17ny'
