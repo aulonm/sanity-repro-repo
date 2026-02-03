@@ -1,15 +1,14 @@
 import { createClient } from '@sanity/client';
 import { documentEventHandler } from '@sanity/functions';
-import { defineQuery } from 'groq';
 import pThrottle from 'p-throttle';
 
-const PAGE_URL_QUERY = defineQuery(`*[_type == "page" && _id == $id] {
+const PAGE_URL_QUERY = `*[_type == "page" && _id == $id] {
   _type,
   _id,
   title,
   slug,
   site,
-}`);
+}`;
 
 const BATCH_SIZE = 10;
 
