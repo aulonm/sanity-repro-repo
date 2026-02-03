@@ -26,4 +26,3 @@ jobs:
           sanity-token: ${{ secrets.SANITY_STUDIO_DEPLOY_TOKEN }}
           stack-id: 'ST-744chg4bru'
           project-id: 'tq6w17ny'
-          working-directory: './apps/studio'
