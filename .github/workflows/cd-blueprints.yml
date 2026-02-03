@@ -7,9 +7,9 @@ on:
     paths:
       - .github/workflows/cd-blueprints.yml
       - .github/workflows/ci-blueprints.yml
-      - apps/studio/sanity.blueprint.ts
-      - apps/studio/functions/**
-      - apps/studio/blueprint.config.json
+      - sanity.blueprint.ts
+      - functions/**
+      - blueprint.config.json
 
 jobs:
   deploy:

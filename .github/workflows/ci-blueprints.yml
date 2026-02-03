@@ -5,9 +5,9 @@ on:
   pull_request:
     paths:
       - .github/workflows/ci-blueprints.yml
-      - apps/studio/sanity.blueprint.ts
-      - apps/studio/functions/**
-      - apps/studio/blueprint.config.json
+      - sanity.blueprint.ts
+      - functions/**
+      - blueprint.config.json
 
 permissions:
   contents: read
