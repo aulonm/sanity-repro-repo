@@ -44,7 +44,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy blueprints
-        uses: sanity-io/blueprints-actions/deploy@deploy-v2
+        uses: sanity-io/blueprints-actions/deploy@deploy-v2.0.1
         with:
           sanity-token: ${{ secrets.SANITY_STUDIO_DEPLOY_TOKEN }}
           stack-id: 'ST-qwq7vwf7w6'
